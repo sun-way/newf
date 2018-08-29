@@ -23,24 +23,7 @@ class Router
             'params' => $params
         ];
     }
-    /**
-     * Добавление ресурса
-     * ------
-     * Действия, обрабатываемые ресурс-контроллером:
-     * VERB         ПУТЬ                 ДЕЙСТВИЕ        ИМЯ МАРШРУТА
-     * ---------------------------------------------------------------
-     * GET          /photo                index         photo.index
-     * GET          /photo/create         create        photo.create
-     * POST         /photo                store         photo.store
-     * GET          /photo/{photo}        show          photo.show
-     * GET          /photo/{photo}/edit   edit          photo.edit
-     * PUT          /photo/{photo}        update        photo.update
-     * DELETE       /photo/{photo}        destroy       photo.destroy
-     * ---------------------------------------------------------------
-     * Пример: Route::resource('photo', 'PhotoController');
-     * @param $resource
-     * @param $controller //пример: PhotoController
-     */
+  
     public static function resource($resource, $controller)
     {
         //route('contacts.edit', ['id' => $contact->id])
